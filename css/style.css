@@ -368,7 +368,7 @@ body {
 }
 
 .contact__info {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 23px;
     color: #000000;
     margin-bottom: 20px;
@@ -399,4 +399,41 @@ body {
 
 .contact__info.icon__place::before {
     background: url("../img/icon/icon-place.svg");
+}
+
+/* Delivery */
+
+.delivery__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.delivery__image {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.delivery__image img {
+    object-fit: contain;
+}
+
+.delivery__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #BAADAD;
+    max-width: 630px;
+    margin: 100px auto 50px;
+}
+
+.descriptions.delivery {
+    max-width: 700px;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #BAADAD;
 }
