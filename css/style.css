@@ -411,6 +411,8 @@ body {
 }
 
 .delivery__image {
+    justify-content: center;
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -437,3 +439,44 @@ body {
     text-align: center;
     color: #BAADAD;
 }
+
+/* Certificate */
+
+.background__certificate {
+    margin-top: 100px;
+    background: #A8BCB5;
+}
+.certificate__cantainer {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.certificate__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+.descriptions.certificate {
+    max-width: 800px;
+    color: #fff;
+}
+
+.image__certificate__container {
+    margin-top: -100px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image__certificate__container img {
+    width: 270px;
+    height: 320px;
+    background: #F0F0F0;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+
