@@ -417,6 +417,10 @@ body {
     color: #FFFFFF;
 }
 
+.footer__nav li {
+    list-style: none;
+}
+
 /* Contact */
 
 .contact__info__block {
