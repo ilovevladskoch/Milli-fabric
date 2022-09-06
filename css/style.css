@@ -760,3 +760,189 @@ body {
     margin-top: 20px;
 }
 
+/* Archive */
+
+.archive__cards {
+    margin-top: 50px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.archive__card {
+    position: relative; 
+}
+
+.archive__image {
+    object-fit: none;
+}
+
+.archive__title {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background: #00000053;
+    width: 100%;
+    height: 100px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.archive__link {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.archive__link:hover {
+    opacity: 0.8;
+}
+
+.products__title {
+    text-align: center;
+    margin: 50px auto;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.product__card {
+    text-align: center;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #474747;
+}
+
+.product__title {
+    margin: 15px 0;
+}
+
+.product__price {
+    font-weight: 600;
+}
+
+/* Tabs */
+
+.tabs__item {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tab__item {
+    position: relative;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+}
+
+.tab__item:hover::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #000;
+    bottom: -20px;
+    opacity: 1;
+    
+}
+
+.tab__item__active {
+    text-decoration: underline;
+}
+
+.tab__item.active:hover {
+    text-decoration: underline;
+}
+
+.product__tabs__block {
+    display: none;
+}
+
+.product__tabs__block__active {
+    display: block;
+}
+
+.tabs__item.person {
+    max-width: 700px;
+    border-bottom: 1px solid#000;
+    padding-bottom: 20px;
+}
+
+
+/* Breadcrumb */
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+}  
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: rgb(27, 27, 27);
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.breadcrumb li {
+    color: #000000;
+}
+
+/* Person page */
+
+.person__data {
+    padding-top: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.person__data__input {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+
+.person__title {
+    margin-right: 10px;
+}
+
+.person__data__input input {
+    max-width: 100%;
+}
+
+.person__data.adress {
+    padding-top: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+input::placeholder {
+    width: 100%;
+}
