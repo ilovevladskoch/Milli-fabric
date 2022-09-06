@@ -946,3 +946,40 @@ ul.breadcrumb li a:hover {
 input::placeholder {
     width: 100%;
 }
+
+/* Table order */
+
+.order__card {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.left__order__block {
+    display: flex;
+    align-items: center;
+}
+.num__order {
+}
+
+.img__order {
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.right__order__block {
+    flex-wrap: wrap;
+    width: 70%;
+    position: relative;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #474747;
+}
