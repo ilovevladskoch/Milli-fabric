@@ -17,9 +17,30 @@ popBtn.addEventListener('click', function () {
 const popClose = document.querySelector('.btn__close');
 
 popClose.addEventListener('click', function () {
-    popCont.classList.remove('pay__one__click__active');
+    popCont.classList.toggle('pay__one__click__active');
 });
 
+const catalogBtn = document.querySelector('.catalog');
+const accordion = document.querySelector('.accordion');
+
+catalogBtn.addEventListener('click', function (){
+    accordion.classList.toggle('accordion__active');
+});
+
+const accordions = document.querySelectorAll('.accordion__item');
+
+for(item of accordions) {
+    item.addEventListener('click', function() {
+        if(this.classList.contains('accordion__item__active')){
+            this.classList.remove('accordion__item__active');
+        } else {
+            for(el of accordions) {
+                el.classList.remove('accordion__item__active');
+            }
+            this.classList.add('accordion__item__active');
+        }
+    })
+}
 
 document.querySelectorAll('.tab__item').forEach((item) => 
     item.addEventListener('click', function (e){

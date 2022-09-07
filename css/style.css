@@ -150,14 +150,6 @@ body {
     border-radius: 7px;
 }
 
-.catalog {
-    margin-top: 10px;
-    display: inline-block;
-    padding: 10px 50px;
-    background-color: #6C6C6C;
-    color: #fff;
-    border-radius: 15px;
-}
 .right__header__block {
     width: 100%;
 
@@ -1275,3 +1267,96 @@ input::placeholder {
     justify-content: center;
     margin-top: 50px;
 }
+
+/* Accordion menu */
+
+.catalog {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #6C6C6C;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.accordion {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    margin-top: 10px;
+    height: auto;
+    padding: 50px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 70px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.accordion__active {
+    opacity: 1;
+}
+
+.accordion__item__title {
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    padding: 10px 50px;
+}
+
+.accordion__item__title::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 7px;
+    top: 20px;
+    right: 40px;
+    background: url('../img/icon/arrow.svg');
+    transition: .5s ease-in-out;
+}
+
+.accordion__item__content {
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    background: #F7F2F2;
+    transition: .5s ease-in-out;
+}
+
+.accordion__item__content li {
+    list-style: none;
+    margin-left: 50px;
+    padding: 10px 40px;
+    color: #595959;
+}
+
+ul.accordion__item__content {
+    margin-bottom: 0;
+}
+
+.accordion__item.accordion__item__active .accordion__item__content {
+    max-height: 200px;
+    padding: 20px 0;
+}
+
+.accordion__item.accordion__item__active .accordion__item__title::after {
+    transform: rotate(-90deg);
+}
+
+.nav__accordion {
+    font-size: 18px;
+    line-height: 26px;
+    color: #595959;
+    transition: .5s ease-in-out;
+}
+
+.nav__accordion li {
+    list-style: none;
+    margin-left: 50px;
+    padding: 10px 40px;
+    color: #595959;
+}
+
