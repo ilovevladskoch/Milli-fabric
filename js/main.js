@@ -6,6 +6,21 @@ navBtn.addEventListener('click', function () {
     navBtn.classList.toggle('toggle__btn__close');
 })
 
+const popBtn = document.querySelector('.btn__pay-2');
+const popCont = document.querySelector('.pay__one__click');
+
+
+popBtn.addEventListener('click', function () {
+    popCont.classList.toggle('pay__one__click__active');
+});
+
+const popClose = document.querySelector('.btn__close');
+
+popClose.addEventListener('click', function () {
+    popCont.classList.remove('pay__one__click__active');
+});
+
+
 document.querySelectorAll('.tab__item').forEach((item) => 
     item.addEventListener('click', function (e){
         e.preventDefault();
@@ -25,3 +40,4 @@ document.querySelectorAll('.tab__item').forEach((item) =>
 );
 
 document.querySelector('.tab__item').click();
+
