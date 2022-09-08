@@ -1384,13 +1384,14 @@ ul.accordion__item__content {
     justify-content: space-between;
     align-items: center;
     left:-100%;
-    transition: 1.3s;
+    transition: 1s ease-in-out;
     opacity: 0;
 }
 
 .slider__item.active__slide__item .slider__item__block,
 .slider__item__customer.active__slider__item__customer .slider__item__block {
     height: auto;
+    min-height: 550px;
     opacity: 1;
     left:0;
 }
