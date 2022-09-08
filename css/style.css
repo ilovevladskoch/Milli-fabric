@@ -899,6 +899,7 @@ body {
 /* Breadcrumb */
 
 ul.breadcrumb {
+    margin-top: 15px;
     padding: 10px 16px;
     list-style: none;
 }
@@ -1080,6 +1081,7 @@ input::placeholder {
 
 .design__type__print__block {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 50px;
 }
 
@@ -1280,7 +1282,8 @@ input::placeholder {
 }
 
 .accordion {
-    display: block;
+    margin-right: 20px;
+    display: none;
     z-index: 2;
     position: absolute;
     margin-top: 10px;
@@ -1295,6 +1298,7 @@ input::placeholder {
 
 .accordion__active {
     opacity: 1;
+    display: block;
 }
 
 .accordion__item__title {
@@ -1360,3 +1364,227 @@ ul.accordion__item__content {
     color: #595959;
 }
 
+
+/* Slider */
+
+.slider__container {
+    margin-top: 50px;
+}
+
+.slider__item__block {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left:-100%;
+    transition: 1s;
+    opacity: 0;
+}
+
+
+.slider__item.active__slide__item .slider__item__block {
+    min-height: 500px;
+    opacity: 1;
+    left:0;
+}
+
+.slider__item__block img {
+    max-width: 50%;
+}
+
+.slider__info__block {
+    margin-right: 30px;
+}
+
+.slider__title {
+    font-size: 80px;
+    line-height: 104px;  
+    color: #6C6C6C;
+}
+
+.slider__text {
+    font-size: 40px;
+    line-height: 46px;
+    color: #6C6C6C;
+    margin-bottom: 25px;
+}
+
+.dots__container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #E8CFCC;
+    margin-right: 20px;
+    transition: .5s;
+}
+
+.dot.active__dot {
+    background: #B49F9D;
+}
+
+
+
+
+@media (max-width: 800px) {
+    .nav {
+        text-align: center;
+        border-left: unset;
+    }
+
+    .navi:hover::before {
+        display: none;
+    }
+
+    .pros__pre-order__block {
+        flex-direction: column;
+    }
+
+    .pros__block:not(:last-child) {
+        margin-right: unset;
+        margin-bottom: 50px;
+    }
+
+    .design {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .design__text__block {
+        padding: 250px 40px 100px;
+        margin-top: -150px;
+        margin-left: 0;
+    }
+
+    .design img {
+        max-width: 80%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer__nav {
+        display: none;
+    }
+
+    .footer__columns {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .scheme__block {
+        justify-content: center;
+        flex-wrap: wrap;
+        border-top: unset;
+        border-right: unset;
+        border-bottom: unset;
+    }
+
+    .scheme__block__type2 {
+        flex-wrap: wrap;
+    }
+
+    .card__header {
+        display: none;
+    }
+
+    .cart__product {
+        grid-template-columns: 1fr 2fr 150px 1fr;
+    }
+
+    .cart__product__title,
+    .cart__product__count,
+    .cart__product__price {
+        grid-column: 3;
+        display: grid;
+    }
+
+    .cart__product__num {
+        grid-row: 2;
+    }
+
+    .cart__prodect__remove {
+        grid-row: 2;
+    }
+
+    .cart__product img {
+        max-width: 70%;
+        grid-column: 2;
+        grid-row: 1 / span 3;
+    }
+
+    .cart__prodect__remove {
+        grid-column: 4;
+    }
+}
+
+@media (max-width: 600px) {
+    .right__order__block {
+        flex-direction: column;
+        text-align: left;
+        display: flex;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .about__shop__container {
+        padding: 70px 30px;
+    }
+
+    .right__header__block {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    .header__number__block {
+        margin-top: unset;
+        margin-bottom: 20px;
+    }
+
+    .icon__header__block {
+        border-bottom: unset;
+        border-top: 1px solid #6C6C6C;
+        padding-bottom: unset;
+        padding-top: 20px;
+    }
+    
+}
+
+@media (max-width: 440px) {
+    .design__type__print__block {
+        flex-wrap: wrap;
+    }
+
+    .design__type__print__block p {
+        margin-bottom: 20px;
+    }
+
+    .tabs__item {
+        flex-direction: column;
+    }
+
+    .tab__item {
+        margin-bottom: 30px;
+    }
+
+    .tabs__item.person {
+        border-bottom:unset
+    }
+
+    .person__data {
+        padding-top: 0;
+    }
+
+    .tab__item:hover::after {
+        width: 40%;
+        left: 30%;
+    }
+}
