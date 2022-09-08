@@ -978,8 +978,6 @@ input::placeholder {
     display: flex;
     align-items: center;
 }
-.num__order {
-}
 
 .img__order {
     margin-left: 20px;
@@ -1383,12 +1381,18 @@ ul.accordion__item__content {
     opacity: 0;
 }
 
-
-.slider__item.active__slide__item .slider__item__block {
-    min-height: 500px;
+.slider__item.active__slide__item .slider__item__block,
+.slider__item__customer.active__slider__item__customer .slider__item__block {
+    min-height: 550px;
     opacity: 1;
     left:0;
 }
+
+.slider__item__block.customer {
+    text-align: center;
+    justify-content: center;
+}
+
 
 .slider__item__block img {
     max-width: 50%;
@@ -1416,21 +1420,73 @@ ul.accordion__item__content {
     text-align: center;
 }
 
-.dot {
+.dot,
+.dot__customer {
     display: inline-block;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background: #E8CFCC;
     margin-right: 20px;
-    transition: .5s;
+    transition: .5s ease-in-out;
 }
 
-.dot.active__dot {
+.dot.active__dot,
+.dot__customer.active__dot__customer {
     background: #B49F9D;
 }
 
+.slider__customer__title {
+    margin-top: 50px;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #6C6C6C;
+}
 
+.slider__customer__text {
+    margin-top: 50px;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #6C6C6C;
+    max-width: 550px;
+}
+
+.background__customers {
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    background-image: url("../img/bg/bg1.png");
+}
+
+.customer__container {
+    position: relative;
+    padding: 150px 20px;
+}
+
+.btn__prev__customer { 
+    margin-left: 20px;
+    position: absolute;
+    top: 50%;
+    left:0;
+    display: block;
+    width: 21px;
+    height: 45px;
+    background: url('../img/icon/arrow-left.svg');
+}
+
+.btn__next__customer { 
+    margin-right: 20px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 21px;
+    height: 45px;
+    background: url('../img/icon/arrow-left.svg');
+}
 
 
 @media (max-width: 800px) {
