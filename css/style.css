@@ -433,11 +433,11 @@ body {
 }
 
 .since {
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 40px;
+    font-size: 14px;
     line-height: 23px;
     text-align: center;
-    color: #FFFFFF;
+    color: #aeaeae;
 }
 
 .footer__nav li {
