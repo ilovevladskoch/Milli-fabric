@@ -1384,7 +1384,7 @@ ul.accordion__item__content {
     justify-content: space-between;
     align-items: center;
     left:-100%;
-    transition: 2s;
+    transition: 1.3s;
     opacity: 0;
 }
 
