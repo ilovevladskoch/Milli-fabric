@@ -1149,21 +1149,23 @@ input::placeholder {
 .gallery__product {
     margin-top: 25px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .product__page__img {
     display: flex;
     align-items: center;
-    width: 450px;
+    max-width: 450px;
     height: 450px;
     object-fit: contain;
 }
 
 .gallery__product img {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
     object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .gallery__product img:hover,
@@ -1248,7 +1250,7 @@ input::placeholder {
 .form__person {
     padding: 100px 100px;
     position: relative;
-    width: 500px;
+    max-width: 500px;
     height: auto;
     background: #fff;
     margin: 10% auto;
@@ -1304,6 +1306,10 @@ input::placeholder {
     
 }
 
+.form__pay__chek{
+    display: flex;
+}
+
 .custom__radio {
     position: relative;
     display: inline-block;
@@ -1314,6 +1320,7 @@ input::placeholder {
     vertical-align: text-top;
     border-radius: 50%;
     cursor: pointer;
+    list-style: outside;
 }
 
 .custom__radio::before {
@@ -1580,6 +1587,18 @@ ul.accordion__item__content {
     }
 }
 
+@media (max-width: 900px) {
+    .product__page__block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .product__page__block__img {
+        margin-right: 0; 
+    }
+}
+
 @media (max-width: 800px) {
     .nav {
         text-align: center;
@@ -1748,6 +1767,10 @@ ul.accordion__item__content {
         margin-right: unset;
         margin-top: 50px;
     }
+
+    .form__person {
+        padding: 100px 20px;
+    }
 }
 
 @media (max-width: 440px) {
@@ -1783,5 +1806,9 @@ ul.accordion__item__content {
     .print__image__block{
         padding: 0 20px;
         justify-content: center;
+    }
+
+    .btn__pay-3 {
+        padding: 10px 30px;
     }
 }
