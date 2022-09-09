@@ -1214,7 +1214,7 @@ input::placeholder {
 .btn__pay-2 {
     margin-top: 10px;
     display: inline-block;
-    padding: 10px 50px;
+    padding: 12px 50px;
     background-color: #856E71;
     color: #fff;
     border-radius: 15px;
@@ -1222,7 +1222,6 @@ input::placeholder {
 
 .btn__pay-3 {
     margin-left: 10px;
-    margin-top: 10px;
     display: inline-block;
     padding: 10px 50px;
     border: 2px solid #856E71;
@@ -1246,6 +1245,57 @@ input::placeholder {
 .pay__one__click__active {
     top: 0;
 }
+
+.login__block {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    transition: 0.5s ease-in-out;
+}
+
+.register__block {
+    display: block;
+    position: fixed;
+    top: 100vh;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.login__block.login__block__active{
+    top: 0;
+}
+
+.register__block.register__block__active {
+    top: 0;
+    visibility: unset;
+    z-index: 999;
+}  
+
+.popup__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #474747;
+}
+
+.btn__login__block {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .form__person {
     padding: 100px 100px;

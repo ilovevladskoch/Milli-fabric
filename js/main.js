@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 const navBtn = document.querySelector('.toggle__btn');
 const mobileNav = document.querySelector('.toggle__nav');
 
@@ -46,3 +39,20 @@ const popClose = document.querySelector('.btn__close');
 popClose.addEventListener('click', function () {
     popCont.classList.toggle('pay__one__click__active');
 });
+
+const loginOpen = document.querySelector('.login__popup'),
+        loginBlock = document.querySelector('.login__block');
+
+loginOpen.addEventListener('click', function (){
+    loginBlock.classList.toggle('login__block__active');
+});
+
+const registerOpen = document.querySelector('.btn__register'),
+        registerBlock = document.querySelector('.register__block');
+
+    registerOpen.addEventListener('click', function (){
+    registerBlock.classList.toggle('register__block__active');
+    loginBlock.classList.remove('login__block__active');
+});
+
+
