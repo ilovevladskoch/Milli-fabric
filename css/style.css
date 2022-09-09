@@ -1134,6 +1134,8 @@ input::placeholder {
     text-align: center;
 }
 
+
+
 /* Product page */
 
 .product__page__block {
@@ -1272,8 +1274,46 @@ input::placeholder {
 .btn.popup {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 25px;
 }
+
+.form__pay__chek {
+    margin-top: 25px;
+    font-size: 13px;
+    
+}
+
+.product__variable__color {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    gap: 10px;
+}
+
+.product__variable__color img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+}
+
+.radio__block {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.custom__radio {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #6C6C6C;
+    margin-right: 10px;
+    vertical-align: text-top;
+    border-radius: 50%;
+}
+
 
 /* Accordion menu */
 
