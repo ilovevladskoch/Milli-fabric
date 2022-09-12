@@ -40,6 +40,7 @@
 body {
     font-family: 'Gilroy';
     font-size: 16px;
+    color: #6C6C6C;
 }
 
 
@@ -156,7 +157,7 @@ body {
 }
 .icon__header__block {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     border-bottom: 1px solid #6C6C6C;
     margin-left: 20px;
@@ -170,7 +171,7 @@ body {
 .header__number__block {
     margin-top: 20px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -250,7 +251,7 @@ body {
 }
 
 .pros__container img {
-    width: 150px;
+    width: 80px;
 }
 
 .pros__block:not(:last-child) {
@@ -1516,7 +1517,7 @@ ul.accordion__item__content {
 .slider__item.active__slide__item .slider__item__block,
 .slider__item__customer.active__slider__item__customer .slider__item__block {
     height: auto;
-    min-height: 550px;
+    min-height: 400px;
     opacity: 1;
     left:0;
 }
@@ -1820,6 +1821,16 @@ ul.accordion__item__content {
 
     .form__person {
         padding: 100px 20px;
+    }
+
+    .variable__pre-order__block {
+        flex-direction: column;
+        align-items: center;
+        margin: 70px auto 0;
+    }
+
+    .variable-1 {
+        margin-bottom: 50px;
     }
 }
 
